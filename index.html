@@ -12,12 +12,19 @@
 
     gtag('config', 'G-37221Z355T');
   </script>
+  <meta property="og:title" content="Colectivo de Madereros de Tortel">
+  <meta property="og:description" content="Conectados con la historia, el paisaje y la comunidad, el Colectivo de Madereros de Tortel trabaja para resguardar y proyectar el patrimonio vivo local.">
+  <meta property="og:image" content="https://colectivomadererostortel.cl/assets/images/image_og.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://colectivomadererostortel.cl/">
+  <link rel="canonical" href="https://colectivomadererostortel.cl/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Colectivo Madereros de Tortel</title>
+  <meta name="description" content="Conectados con la historia, el paisaje y la comunidad, el Colectivo de Madereros de Tortel trabaja para resguardar y proyectar el patrimonio vivo local."
 </head>
 
 <body>
@@ -49,7 +56,35 @@
 
   <footer>
     <p>Colectivo Madereros de Tortel&copy;Todos los derechos reservados</p>
+    <button class="privacy__btn" onclick="document.getElementById('privacy-modal').showModal()">Política de
+      privacidad</button>
   </footer>
+
+  <dialog id="privacy-modal" class="modal">
+    <h3 class="modal__title">Política de Privacidad</h3>
+    <p class="modal__info">En el 'Colectivo de Madereros de Tortel' respetamos tu privacidad.
+      Nuestro sitio utiliza herramientas de análisis como Google Analytics para conocer de forma anónima cómo las
+      personas visitan y utilizan la página.</p>
+    <p class="modal__info">Estos datos nos ayudan a mejorar la experiencia de nuestros usuarios, pero no contienen
+      ninguna información
+      personal identificable (como nombre, dirección o correo electrónico). La información recolectada incluye, por
+      ejemplo:</p>
+    <ul class="modal__list">
+      <li>Páginas visitadas dentro del sitio</li>
+      <li>Tiempo de permanencia</li>
+      <li>Tipo de dispostivo y navegador</li>
+    </ul>
+    <p class="modal__info">Estos datos son procesados por Google Analytics, bajo sus propias políticas de privacidad, y
+      no se comparten con terceros fuera de ese servicio. Al continuar navegando en nuestro sitio, aceptas el uso de cookies y datos anónimos para fines estadísticos y de
+      mejora continua.</p>
+    <p class="modal__info">Puedes obtener más información en la <a href="https://policies.google.com/privacy" class="modal__link" target="_blank">Política de Privacidad de
+        Google</a></p>
+
+    <form method="dialog">
+      <button class="modal__btn">Cerrar</button>
+    </form>
+
+  </dialog>
 
   <script src="assets/js/script.js"></script>
 </body>

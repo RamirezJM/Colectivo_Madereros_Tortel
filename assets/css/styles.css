@@ -27,19 +27,15 @@ img {
   width: 100%;
   height: auto;
 }
-
-h1, h2{
-  text-align: center;
-}
-
 button{
   padding: .5em 1em;
   border-radius: 5px;
-  font-weight: 600;
-  border: none;
-  background-color: var(--accent);
-  color: #fff;
-  
+  font-weight: 500;
+  width: fit-content;
+}
+
+h1, h2{
+  text-align: center;
 }
 
 header {
@@ -101,9 +97,55 @@ main{
 
  footer{
   background-color: var(--blue4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
   padding: 1em;
   text-align: center;
  }
+
+.privacy__btn{
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.modal{
+  width: clamp(300px, 40vw, 500px);
+  margin: 3em auto;
+  padding: 1em;
+  gap: 1em;
+  background-color: #D1ECEF;
+}
+
+.modal::backdrop{
+  background-color: rgba(0, 0, 0, .7);
+
+}
+
+.modal__title, .modal__info{
+  margin-block: 1em;
+}
+
+.modal__list{
+  padding-inline-start: 1em;
+}
+.modal__list>li{
+  list-style-type: circle;
+  margin-block: .5em;
+}
+
+.modal__link{
+  color: black;
+  text-underline-offset: .2em;
+}
+.modal__btn{
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-weight: 500;
+
+}
+
 
 @media (min-width:700px){
 main{

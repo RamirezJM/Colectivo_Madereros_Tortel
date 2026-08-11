@@ -1,0 +1,8 @@
+@use 'abstracts/variables' as var;
+
+@use 'bootstrap/scss/bootstrap' with ($primary: var.$verde,
+  $secondary: var.$pergamino,
+  $light: var.$lino,
+  $body-color: var.$grafito,
+
+);

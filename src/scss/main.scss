@@ -4,5 +4,14 @@
   $secondary: var.$pergamino,
   $light: var.$lino,
   $body-color: var.$grafito,
+  $font-family-sans-serif: ("IBM Plex Sans Variable", sans-serif),
+  $headings-font-family: ("Fraunces Variable", serif));
 
-);
+
+.navbar-nav {
+  .nav-link {
+    font-family: 'Fraunces Variable', serif;
+    color: var.$pergamino;
+    font-size: 1.2rem;
+  }
+}

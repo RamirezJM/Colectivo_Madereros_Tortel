@@ -3,6 +3,7 @@
 @use 'bootstrap/scss/bootstrap' with ($primary: var.$verde,
   $secondary: var.$pergamino,
   $light: var.$lino,
+  $info: var.$azul,
   $body-color: var.$grafito,
   $font-family-sans-serif: ("IBM Plex Sans Variable", sans-serif),
   $headings-font-family: ("Fraunces Variable", serif));
@@ -14,4 +15,9 @@
     color: var.$pergamino;
     font-size: 1.2rem;
   }
+}
+
+p {
+  max-width: 75ch;
+  margin-inline: auto;
 }

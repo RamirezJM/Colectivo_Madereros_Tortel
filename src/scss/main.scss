@@ -21,3 +21,18 @@ p {
   max-width: 75ch;
   margin-inline: auto;
 }
+
+.logo-footer {
+  width: 100px;
+}
+
+.social {
+  width: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to right, black, transparent);
+}

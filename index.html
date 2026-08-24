@@ -18,7 +18,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav text-center ms-lg-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
@@ -45,13 +45,17 @@
   </nav>
 
   <section class="hero position-relative overflow-hidden">
-    <!-- <picture>
-      <source media>
-    </picture> -->
-    <img src="src/assets/images/hero2.webp" alt="mano con martillo y clavo"
-      class="position-absolute object-fit-cover w-100 h-100">
+    <picture>
+      <source media="(max-width: 550px)" srcset="src/assets/images/hero-sm.webp">
+      <source media="(max-width: 850px)" srcset="src/assets/images/hero-md.webp">
+      <img src="src/assets/images/hero-lg.webp" alt="manos con gubia tallando madera"
+        class="position-absolute w-100 h-100 object-fit-cover object-position-center z-n1" fetchpriority="high">
+    </picture>
+    <!-- <img src="src/assets/images/hero2.webp" alt="mano con martillo y clavo"
+      class="position-absolute object-fit-cover w-100 h-100"> -->
+    <div class="overlay"></div>
     <div class="container">
-      <h1 class="display-2 text-light w-50 px-5">Colectivo Madereros de Tortel</h1>
+      <h1 class="display-2 text-light fw-medium w-50 py-2 text-center mx-auto z-10">Colectivo Madereros de Tortel</h1>
     </div>
 
   </section>

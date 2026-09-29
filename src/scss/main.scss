@@ -32,8 +32,15 @@ p {
   width: 100px;
 }
 
+.social-link:hover{
+  transform: scale(1.3);
+   /*  background-color: var.$grafito;
+    padding: 0.2em;
+    border-radius: 50%; */
+}
 .social {
   width: 2rem;
+
 }
 
 .overlay {

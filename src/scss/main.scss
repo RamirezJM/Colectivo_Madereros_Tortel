@@ -9,6 +9,7 @@
   $font-family-sans-serif: ("IBM Plex Sans Variable", sans-serif),
   $headings-font-family: ("Fraunces Variable", serif));
 
+@use "sal.js/dist/sal.css";
 
 .navbar-nav {
   .nav-link {
